@@ -19,8 +19,11 @@ https://rich04230-eval-prod.apigee.net/users?query=1; DROP TABLE user;
 
 - Get a valid OAuth access token
 
-
-curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: application/json' "https://rich04230-eval-prod.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials" -d 'client_id=BkGt9uWbraoBcNy9asyEizt7HMIks8D1&client_secret=iZayCC7pYbrYNGLz'
+```bash
+curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: application/json' \
+"https://rich04230-eval-prod.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials" \
+-d 'client_id=BkGt9uWbraoBcNy9asyEizt7HMIks8D1&client_secret=iZayCC7pYbrYNGLz'
+```
 
 ```json
 {
