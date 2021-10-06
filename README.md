@@ -1,12 +1,11 @@
 # apim-security-policy
 
-## API Info
-- user service endpoint: https://6151c8204a5f22001701d425.mockapi.io/api/v1/users
+- [user service api](https://6151c8204a5f22001701d425.mockapi.io/api/v1/users)
 
-## Demo1: Gernral API Security - Threat Protection
-- DoS Protection
-- SQL Injection Protection
+## Demo1: Threat Protection security
 
+- api proxy endpoint: http://rich04230-eval-prod.apigee.net/users
+- request sample:
 ```
 https://rich04230-eval-prod.apigee.net/users 
 https://rich04230-eval-prod.apigee.net/users?query=password’ OR 1=1
@@ -14,6 +13,9 @@ https://rich04230-eval-prod.apigee.net/users?query=1; DROP TABLE user;
 ```
 
 ## Demo2: API Key based API security
+- api proxy endpoint: http://rich04230-eval-prod.apigee.net/users-apikey 
+- apikey=apikey=BkGt9uWbraoBcNy9asyEizt7HMIks8D1
+
 
 ## Demo3: OAuth 2.0 based API security (Client Credentials)
 
@@ -45,5 +47,6 @@ curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: ap
 ```
 
 - test the protected API by passing in the valid access token
-
+```bash
 curl -X GET -H "Authorization: Bearer {ACCESS_TOKEN}" https://rich04230-eval-prod.apigee.net/users-oauth
+```
