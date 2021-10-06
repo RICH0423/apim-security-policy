@@ -13,7 +13,7 @@
 
 ## Demo2: API Key based API security
 - api proxy endpoint: http://rich04230-eval-prod.apigee.net/users-apikey 
-- apikey=apikey=BkGt9uWbraoBcNy9asyEizt7HMIks8D1
+- apikey=BkGt9uWbraoBcNy9asyEizt7HMIks8D1
 
 
 ## Demo3: OAuth 2.0 based API security (Client Credentials)
