@@ -5,11 +5,10 @@
 ## Demo1: Threat Protection security
 
 - api proxy endpoint: http://rich04230-eval-prod.apigee.net/users
-- request sample:
+- SQL injection sample:
 ```
-https://rich04230-eval-prod.apigee.net/users 
-https://rich04230-eval-prod.apigee.net/users?query=password’ OR 1=1
-https://rich04230-eval-prod.apigee.net/users?query=1; DROP TABLE user;
+?query=password’ OR 1=1
+?query=1; DROP TABLE user;
 ```
 
 ## Demo2: API Key based API security
